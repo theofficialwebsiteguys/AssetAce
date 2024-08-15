@@ -1,0 +1,82 @@
+.about-section {
+    background-color: #000;
+    color: #fff;
+    padding: 120px 20px; /* Adjusted padding to ensure it scales on smaller screens */
+  }
+  
+  .section-header {
+    font-size: 50px;
+    margin: 0px;
+  }
+  
+  .section-desc {
+    font-size: 25px;
+    margin: 0px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 50%;
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-header {
+      font-size: 40px;
+    }
+  
+    .section-desc {
+      font-size: 24px;
+    }
+  
+    .about-container {
+      flex-direction: column; /* Stack the text and image vertically */
+      align-items: flex-start;
+    }
+  
+    .about-text, .about-image {
+      max-width: 100%; /* Full width for both text and image */
+    }
+  
+    .about-image {
+      justify-content: center; /* Center the image on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-header {
+      font-size: 30px;
+    }
+  
+    .section-desc {
+      font-size: 20px;
+    }
+  
+    .about-section {
+      padding: 80px 20px; /* Reduce padding for very small screens */
+    }
+  }
+  

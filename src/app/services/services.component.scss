@@ -1,0 +1,98 @@
+.services-section {
+    background-color: #5e5e5e;
+    color: #333;
+    padding: 120px 20px; /* Adjusted padding to ensure it scales on smaller screens */
+  }
+  
+  .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  .services-image {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
+  }
+  
+  .services-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .services-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+  }
+  
+  .services-text h2 {
+    margin-bottom: 20px;
+  }
+  
+  .services-text ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .services-text li {
+    margin-bottom: 10px;
+  }
+  
+  .section-header {
+    font-size: 50px;
+    margin: 0px;
+  }
+  
+  .section-desc {
+    font-size: 20px;
+    margin: 0px;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-header {
+      font-size: 40px;
+    }
+  
+    .section-desc {
+      font-size: 24px;
+    }
+  
+    .services-container {
+      flex-direction: column-reverse; /* Stack the text and image vertically with image on top */
+      align-items: flex-start;
+    }
+  
+    .services-text, .services-image {
+      max-width: 100%; /* Full width for both text and image */
+      text-align: left; /* Align text to the left on smaller screens */
+    }
+  
+    .services-image {
+      justify-content: center; /* Center the image on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-header {
+      font-size: 30px;
+    }
+  
+    .section-desc {
+      font-size: 20px;
+    }
+  
+    .services-section {
+      padding: 80px 20px; /* Reduce padding for very small screens */
+    }
+  }
+  
