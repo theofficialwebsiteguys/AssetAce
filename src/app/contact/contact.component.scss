@@ -28,3 +28,22 @@
   .contact-form button:hover {
     background-color: #e5b600; /* A slightly darker shade of gold */
   }
+
+  .confirmation-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50; /* Green for success */
+    text-align: center;
+  }
+  
+  .confirmation-message.error {
+    background-color: #f44336; /* Red for error */
+  }
+  
+
+  .btn{
+    font-size: 20px;
+  }

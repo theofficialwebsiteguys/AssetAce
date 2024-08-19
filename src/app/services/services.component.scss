@@ -52,7 +52,7 @@
   }
   
   .section-desc {
-    font-size: 20px;
+    font-size: 25px;
     margin: 0px;
     color: white;
   }
@@ -93,6 +93,60 @@
   
     .services-section {
       padding: 80px 20px; /* Reduce padding for very small screens */
+    }
+  }
+  
+
+  .inverse-services-section {
+    background-color: #333; /* Different background color */
+    color: #fff; /* Light text color */
+    padding: 120px 20px;
+  }
+  
+  .inverse-services-section .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  .inverse-services-section .services-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left; /* Text aligned to the left */
+  }
+  
+  .inverse-services-section .services-image {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end; /* Image aligned to the right */
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
+  }
+  
+  .inverse-services-section .services-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Reuse the responsive design for consistency */
+  @media (max-width: 768px) {
+    .inverse-services-section .services-container {
+      flex-direction: column; /* Stack the text and image vertically with text on top */
+      align-items: flex-start;
+    }
+  
+    .inverse-services-section .services-text,
+    .inverse-services-section .services-image {
+      max-width: 100%;
+      text-align: left;
+    }
+  
+    .inverse-services-section .services-image {
+      justify-content: center;
     }
   }
   
